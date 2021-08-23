@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+body{
+    background: #00001a;
+    height: 100vh;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    color: #fff;
+    background-color: #00001a;
+    font-weight: 600;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.5);
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+}
+header nav a{
+    color: #fff;
+    margin-right: 30px;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+header nav a:hover{
+    color: #fff;
+    border-radius: 7px;
+}
+header div.sign-in-up button{
+    background-color: #75cfbd;
+    font-size: 16px;
+    font-weight: 550;
+    padding: 4px 12px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    outline: none;
+    margin-left: 20px;
+}
+header div.sign-in-up button:last-child{
+    background-color: #fa9579;
+}
+div.popup-container-1{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+div.popup-container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    display: none;
+
+}
+div.popup-container div.popup,
+div.popup-container-1 div.popup{
+    background-color: #f0f0f0;
+    width: 350px;
+    border-radius: 5px;
+    padding: 20px 25px 30px 25px;
+}
+div.popup-container div.popup h2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    color: #30475e;
+    margin-bottom: 30px;
+}
+div.popup-container div.popup h2 button{
+    border: none;
+    background-color: transparent;
+    outline: none;
+    font-size: 28px;
+    font-weight: 550;
+    color: #30475e;
+}
+div.popup-container div.popup input,
+div.popup-container-1 div.popup input{
+    width: 100%;
+    margin-bottom: 30px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #30475e;
+    border-radius: 0;
+    font-weight: 550px;
+    padding: 6px;
+    font-size: 14px;
+    outline: none;
+}
+div.popup-container div.popup button.login-btn,
+div.popup-container div.register button.register-btn{
+    font-weight: 550px;
+    font-size: 15px;
+    color: white;
+    background-color: #30475e;
+    padding: 4px 10px;
+    border: none;
+    outline: none;
+    margin-top: 5px;
+    cursor: pointer;
+}
+div.popup-container div.register{
+    background-color: #edeef7;
+}
+div.popup-container div.register h2{
+    color: #fa9579;
+}
+div.popup-container div.register input{
+    border-bottom-color: #fa9579;
+}
+div.popup-container div.register button.register-btn{
+    background-color: #fa9579;
+}
+div.user{
+    color: #30475e;
+    background-color: #fff;
+    padding: 5px 15px;
+    border-radius: 5px;
+    font-weight: 550;
+    text-decoration: none;
+}
+div.user a{
+    color: #3a3a3a;
+    text-decoration: none;
+}
+a{
+    text-decoration: none;
+}
+button{
+    cursor: pointer;
+}
+
+@keyframes change{
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
